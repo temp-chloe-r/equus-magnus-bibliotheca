@@ -4,21 +4,32 @@ import java.util.Scanner;
 
 public class fizzbuzz {
     public static void main(String[] args) {
+        //Initiate Scanner & print instructions to collect the user's input//
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the number you would like to see FizzBuzz upto: ");
+        System.out.println("Please enter the number you would like to see FizzBuzz: ");
         int n = sc.nextInt();
+        //Begin printing the output//
         System.out.println("The FuzzBuzz Answers are: ");
+        //Loop conditional statements upto chosen number & print correct fizzBuzz statements//
         for (int i = 1; i <= n; i++){
+            //Prints FizzBuzz if the number is divisible by 3 & 5//
             if (i%3==0 && i%5==0){
                 System.out.print("FizzBuzz");
-            }else if (i%3==0){
+            }
+            //Prints Fizz if the number is divisible by 3//
+            else if (i%3==0){
                 System.out.print("Fizz");
-            }else if (i%5==0){
+            }
+            //Prints Buzz if the number is divisible by 5//
+            else if (i%5==0){
                 System.out.print("Buzz");
-            }else{
+            }
+            //Prints the number if the number is not divisible by 3 or 5//
+            else{
                 System.out.print(i);
             }
-            System.out.print(","+" ");
+            //Prints comma and space to format output//
+            System.out.print(", ");
         }
     }
 }
