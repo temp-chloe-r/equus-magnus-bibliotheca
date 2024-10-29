@@ -52,4 +52,14 @@ public class CurrentAccount {
     public void setMaxWithdraw(double maxWithdraw) {
         this.maxWithdraw = maxWithdraw;
     }
+
+    @Override
+    public String toString() {
+        return "CurrentAccount{" +
+                "accountHolderName='" + accountHolderName + '\'' +
+                ", balance=" + balance +
+                ", minBalance=" + minBalance +
+                ", maxWithdraw=" + maxWithdraw +
+                '}';
+    }
 }

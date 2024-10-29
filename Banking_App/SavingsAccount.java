@@ -51,4 +51,15 @@ public class SavingsAccount{
 
     public void setInterest(double interest) {
         this.interest = interest;
-}}
+    }
+
+    @Override
+    public String toString() {
+        return "SavingsAccount{" +
+                "accountHolderName='" + accountHolderName + '\'' +
+                ", balance=" + balance +
+                ", minBalance=" + minBalance +
+                ", interestRate=" + interest +
+                '}';
+    }
+}
